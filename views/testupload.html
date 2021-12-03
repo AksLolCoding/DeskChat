@@ -1,0 +1,12 @@
+<form action='/login' method="POST" enctype="multipart/form-data">
+	<input type="text" name="text">
+	<input type="submit">
+</form>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src='/assets/js/formupload.js'></script>
+<script>
+$("form").submit(function(e){
+	e.preventDefault();
+	FormData.send($("form")[0], '/login', {}, {withCredentials: true});
+});
+</script>

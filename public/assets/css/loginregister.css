@@ -1,0 +1,55 @@
+form{
+    width: 60%;
+	height: 40%;
+	vertical-align: middle;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+input, textarea{
+    width: 70%;
+    height: 0px;
+    font-size: 16px;
+    padding: 20px;
+}
+
+/*Google*/
+.g_id_signin{
+	width: 60%;
+}
+#google_login{
+	height: 44px;
+	width: 200px;
+	min-width: 20%;
+	color: var(--text-color);
+	background-color: var(--theme-color);
+	display: inline-flex;
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+	transition: 1s all ease;
+	cursor: pointer;
+}
+
+#google_login:hover{
+	background-color: var(--hover-color);
+	transition: 0.5s all ease-in-out;
+}
+
+#google_login img{
+	width: 40px;
+	height: 40px;
+	margin: 2px;
+}
+
+#google_login span{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	margin: 2px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Helvetica, sans-serif, Arial;
+}

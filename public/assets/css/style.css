@@ -1,0 +1,138 @@
+/*Document / Window*/
+html, html[theme=dark]{
+	--primary-color: #202020;
+	--accent-color: #2f80ec;
+	--text-color: #ffffff;
+	--theme-color: #000000;
+	--opposite-color: #ffffff;
+	--hover-color: #555658;
+}
+
+html[theme=light]{
+	--primary-color: #f3f3f8;
+	--accent-color: #4e60e5;
+	--text-color: #000000;
+	--theme-color: #ffffff;
+	--opposite-color: #000000;
+	--hover-color: #e0e0e0;
+}
+
+html, body{
+	transition: 1s all ease;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+
+body{
+	background-color: var(--primary-color);
+	text-align: center;
+	font-family: Helvetica, sans-serif, Arial;
+	text-decoration: none;
+	color: var(--text-color);
+}
+/*Site Loading*/
+.loader-large{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	position: relative;
+	border: 12px solid var(--accent-color);
+	animation: loader 2s infinite ease-in-out;
+}
+.loader{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	border: 6px solid var(--accent-color);
+	animation: loader 2s infinite ease;
+}
+.loader-medium{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	border: 4px solid var(--accent-color);
+	animation: loader 2s infinite ease;
+}
+.loader-small{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	position: relative;
+	border: 2px solid var(--accent-color);
+	animation: loader 2s infinite ease;
+}
+.loader-inner{
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	background-color: var(--accent-color);
+	animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  	0% {transform: rotate(0deg);}
+  	25% {transform: rotate(180deg);}
+  	50% {transform: rotate(180deg);}
+  	75% {transform: rotate(360deg);}
+  	100% {transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  	0% {height: 0%;}
+  	25% {height: 0%;}
+  	50% {height: 100%;}
+  	75% {height: 100%;}
+  	100% {height: 0%;}
+}
+@keyframes drop {
+    10% {
+		top: 0em;
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 1;
+        top: 3.78em;
+    }
+    80% {
+        opacity: 1;
+        top: 3.78em;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        top: 6.94em
+    }
+}
+.init-bar-outer{
+	height: 2px;
+	width: 100%;
+	top: 0px !important;
+	position: sticky !important;
+	transition: opacity 1s ease;
+}
+.init-bar-inner{
+	height: 2px;
+	width: 0%;
+	background-color: var(--accent-color);
+	top: 0px !important;
+	left: 0px !important;
+	position: sticky !important;
+	transition: 0.8s ease;
+}
+
+/*Site Defaults*/
+input[type=email]:focus, input[type=password]:focus, textarea:focus{
+	border: none;
+	outline: none;
+	overflow: auto;
+	resize: none;
+}
+
+input[type=password]{
+	-webkit-text-security: disc;
+	-moz-text-security: disk;
+}

@@ -1,0 +1,28 @@
+{
+  "files": {
+    "index.js": [
+      {
+        "id": "c5927bb3-525d-418d-91de-e92d5938ccb6",
+        "line": 116,
+        "version": 8935,
+        "index": 3691
+      }
+    ],
+    "public/assets/css/loginregister.css": [
+      {
+        "id": "503e6a71-e1d5-4806-a0c6-c11ce2880f31",
+        "line": 22,
+        "version": 1531,
+        "index": 302
+      }
+    ],
+    "users/profile_picture/6f3b4307f64b29c7dae7f6cbe32a2ac1": [
+      {
+        "id": "5845354c-50ea-404f-88f0-7543aec8f685",
+        "line": 1,
+        "version": 1,
+        "index": 0
+      }
+    ]
+  }
+}
