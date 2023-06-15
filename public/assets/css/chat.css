@@ -1,0 +1,37 @@
+//Chat Boxes
+.box1 {
+  max-width: 20%;
+  width: max-content;
+  margin: 50px auto;
+  padding: 10px;
+  text-align: center;
+  font-weight: 550;
+  color: white;
+  background-color: dodgerblue;
+  font-family: Helvetica;
+  position: relative;
+}
+
+.sb5:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid dodgerblue;
+  border-right: 10px solid transparent;
+  border-top: 10px solid dodgerblue;
+  border-bottom: 10px solid transparent;
+  right: -20px;
+}
+
+.sb6:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid dodgerblue;
+  border-top: 10px solid dodgerblue;
+  border-bottom: 10px solid transparent;
+  left: -20px;
+}

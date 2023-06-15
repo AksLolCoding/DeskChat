@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include("../head.html") %>
+		<title>Register - DeskChat</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href='/assets/css/style.css'>
+		<link rel="stylesheet" href='/assets/css/form.css'>
+		<script src='/assets/js/jquery.js'></script>
+		<script src='/assets/js/global.js'></script>
+		<script src='/assets/js/formupload.js' async></script>
+		<script src="https://www.google.com/recaptcha/api.js?render=explicit"></script>
+		<script src="https://accounts.google.com/gsi/client" async defer></script>
+		<script src='/assets/js/register.js' async defer></script>
+	</head>
+	<body>
+		<%- include("../header.html") %>
+		<div id="g_id_onload"
+         data-client_id="396042887321-osv8rgbgfc1f2qofkr0aeq12lavlf68m"
+         data-ux_mode="redirect"
+         data-login_uri="https://deskchat.akslolcoding.repl.co/login/google"
+		 data-prompt_parent_id="g_id_onload"
+		 data-context="signup"></div>
+	</body>
+</html>

@@ -1,0 +1,63 @@
+/* Sections */
+section{
+	display: flex;
+	margin: 0px;
+	padding: 32px 64px;
+}
+
+section.feature, section.feature.left{
+	flex-direction: row;
+	align-items: center;
+	gap: 32px;
+}
+
+section.feature.right{
+	flex-direction: row-reverse;
+}
+
+section > div.feature-text{
+	flex-direction: column;
+	flex: 1 1 0px;
+}
+
+section > div.image{
+	height: 560px;
+	flex: 1 1 0px;
+	background: var(--slow-gradient);
+	box-shadow: 0px 0px 32px var(--shadow-color);
+	border: 1px solid var(--header-border-color);
+	border-radius: 32px;
+	transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 1000px){
+	section{
+		flex-direction: column !important;
+	}
+	section > div.image{
+		flex: revert !important;
+		width: 100% !important;
+	}
+}
+
+/* Text */
+section p, section a, section h1, section h2, section h3, section h4, section h5, section h6{
+	text-align: start;
+	margin: 0px;
+	padding: 0px;
+}
+
+section h1{
+	font-size: 64px;
+	font-weight: 700;
+}
+
+section h2{
+	font-size: 48px;
+	font-weight: 600px;
+}
+
+section p, section a{
+	font-size: 16px;
+	font-weight: 400;
+}

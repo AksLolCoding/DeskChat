@@ -1,19 +1,31 @@
 {
   "files": {
-    "index.js": [
+    "functions.js": [
       {
-        "id": "c5927bb3-525d-418d-91de-e92d5938ccb6",
-        "line": 116,
-        "version": 8935,
-        "index": 3691
+        "id": "e60677ae-8e88-4b24-a313-d8a1ee38aa0e",
+        "line": 50,
+        "version": 2777,
+        "index": 1423
+      },
+      {
+        "id": "78e2ec0c-a0fd-46d0-b367-8598a7370ef9",
+        "line": 50,
+        "version": 2777,
+        "index": 1423
       }
     ],
     "public/assets/css/loginregister.css": [
       {
+        "id": "bb14ca51-d5ce-4721-a07b-aeeb5423920f",
+        "line": 30,
+        "version": 200,
+        "index": 486
+      },
+      {
         "id": "503e6a71-e1d5-4806-a0c6-c11ce2880f31",
-        "line": 22,
-        "version": 1531,
-        "index": 302
+        "line": 68,
+        "version": 200,
+        "index": 1021
       }
     ],
     "users/profile_picture/6f3b4307f64b29c7dae7f6cbe32a2ac1": [
