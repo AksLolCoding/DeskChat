@@ -1,0 +1,15 @@
+h2{
+	font-weight: normal;
+	max-width: 25rem;
+}
+
+#logout-form{
+	box-shadow: 0px 0px 3px var(--shadow-color);
+	padding: 24px;
+	text-align: left;
+	max-width: 15rem;
+}
+
+.text-light{
+	font-size: 12px; opacity: 0.8;
+}

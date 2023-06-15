@@ -1,0 +1,23 @@
+<header loggedin="false">
+	<div id="header-left" onclick="location.href = '<%= product.url %>';">
+		<img src='/favicon.ico' id="header-icon"></img>
+		<div style="display: block;">
+			<h3 id="header-title"><%= product.name %></h3>
+			<a id="header-creator" href="<%= product.creator_url %>" onclick="event.stopPropagation();" target="_blank">by <%= product.creator %></a>
+		</div>
+	</div>
+	<div id="header-center">
+		<a href='/site/product/quickchat'>Product</a>
+	</div>
+	<div id="header-right" style="opacity: 0 !important;">
+		<div id="header-links">
+			<a id="header-login" href='/login'>Login</a>
+			<a id="header-register" href='/register' class="link-important">Register</a>
+		</div>
+		<a id="header-hamburger" onclick="$('header').toggleClass('header-open');">
+			<svg symbol="hamburger" viewBox="0 0 16 16">
+				<path/>
+			</svg>
+		</a>
+	</div>
+</header>

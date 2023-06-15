@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>QuickChat - by AksLolCoding</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href='/assets/css/style.css'>
+		<link rel="stylesheet" href='/assets/css/form.css'>
+		<link rel="stylesheet" href='/quickchat/style.css'>
+		<script src='/assets/js/jquery.js'></script>
+		<script src='/assets/js/global.js'></script>
+		<script src='/socket.io/quickchat/socket.io.min.js'></script>
+		<script src='/quickchat/chat.js' type="module"></script>
+	</head>
+	<body>
+		<%- include("./header.html") %>
+		<h1 id="quickchat-header">QuickChat</h1>
+		<div id="wrapper">
+			<div id="join-wrapper">
+				<input type="text" id="room" placeholder="Room (blank for default)">
+				<br><br>
+				<input type="text" id="name" placeholder="Name">
+				<button id="join">Join</button>
+				<br><br>
+				<p>or
+					<button id="import-btn" onclick="$('#import').click()">Import Chat</button>
+					<input type="file" id="import">
+				</p>
+			</div>
+			<br><p>Why should I use QuickChat? <a href='/site/product/quickchat'>View all features</a>.</p>
+		</div>
+	</body>
+	</body>
+</html>

@@ -1,0 +1,100 @@
+/* Wrappers */
+html, body{
+	background-color: var(--primary-color);
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0px !important;
+}
+
+body{
+	width: 100% !important;
+	height: 100% !important;
+}
+
+#meet_wrapper{
+	display: grid;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	z-index: 0;
+}
+
+/* Loading */
+
+#meet_loading{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	grid-row: 1 / -1;
+	grid-column: 1 / -1;
+	user-select: none;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 1s ease;
+}
+
+#meet_loading .loader{
+	margin: auto;
+	text-align: center;
+	position: relative;
+	user-select: none;
+}
+
+#meet_loading a{
+	margin: auto;
+	text-align: center;
+	position: relative;
+	user-select: none;
+	color: var(--text-color);
+}
+
+/* Main Wrapper */
+#meet-wrapper-inner{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	grid-row: 1 / -1;
+	grid-column: 1 / -1;
+	color: var(--text-color);
+	display: block;
+	transition: opacity 1s ease;
+}
+
+#meet-header{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	top: 0px;
+	color: var(--text-color);
+	box-shadow: 0px 2px 2px var(--shadow-color);
+	border-bottom: 1px solid var(--header-border-color);
+}
+
+#meet-main{
+	width: 100%;
+	height: calc(100% - 51px - 61px);
+}
+
+#meet-footer{
+	position: relative;
+	width: 100%;
+	height: 60px;
+	color: var(--text-color);
+	box-shadow: 0px -2px 2px var(--shadow-color);
+	border-top: 1px solid var(--header-border-color);
+}
+
+#meet-sidebar{
+	display: none;
+}
+
+#meet-main .userVideo{
+	max-width: 90%;
+	max-height: 90%;
+	/*transform: rotateY(180deg);*/
+}
+
+#meet-main .userAudio{
+	display: none;
+}

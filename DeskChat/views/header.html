@@ -1,0 +1,60 @@
+<% if (session.loggedin == true){ %>
+<header loggedin="true">
+	<div id="header-left" onclick="location.href = '<%= product.url %>';">
+		<img src='/favicon.ico' id="header-icon"></img>
+		<div style="display: block;">
+			<h3 id="header-title"><%= product.name %></h3>
+			<a id="header-creator" href="<%= product.creator_url %>" onclick="event.stopPropagation();" target="_blank">by <%= product.creator %></a>
+		</div>
+	</div>
+	<div id="header-center">
+		<a href='/home'>Home</a>
+		<a href='/'>Schedule</a>
+		<a href='/'>Contact</a>
+		<a href='/meet/join' target="_blank">Join Meet</a>
+	</div>
+	<div id="header-right">
+		<div id="header-profile">
+			<text><%= session.username %></text>
+			<svg id="header-profile-dropdown" symbol="caret-down" viewbox="0 0 16 16"><path/></svg>
+			<div id="header-profile-options">
+				<a>Profile</a>
+				<a>Settings</a>
+				<a href='/logout'>Logout</a>
+			</div>
+		</div>
+		<a id="header-hamburger" onclick="$('header').toggleClass('header-open');">
+			<svg symbol="hamburger" viewBox="0 0 16 16">
+				<path/>
+			</svg>
+		</a>
+	</div>
+</header>
+<% } else{ %>
+<header loggedin="false">
+	<div id="header-left" onclick="location.href = '<%= product.url %>';">
+		<img src='/favicon.ico' id="header-icon"></img>
+		<div style="display: block;">
+			<h3 id="header-title"><%= product.name %></h3>
+			<a id="header-creator" href="<%= product.creator_url %>" onclick="event.stopPropagation();" target="_blank">by <%= product.creator %></a>
+		</div>
+	</div>
+	<div id="header-center">
+		<a href='/site/product'>Product</a>
+		<a href='/'>About</a>
+		<a href='/'>Contact</a>
+		<a href='/meet/join' target="_blank">Join Meet</a>
+	</div>
+	<div id="header-right">
+		<div id="header-links">
+			<a id="header-login" href='/login'>Login</a>
+			<a id="header-register" href='/register' class="link-important">Register</a>
+		</div>
+		<a id="header-hamburger" onclick="$('header').toggleClass('header-open');">
+			<svg symbol="hamburger" viewBox="0 0 16 16">
+				<path/>
+			</svg>
+		</a>
+	</div>
+</header>
+<% } %>

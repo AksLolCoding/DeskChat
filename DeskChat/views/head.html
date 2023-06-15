@@ -1,0 +1,11 @@
+<link rel="icon" href='/favicon.ico'>
+<script>
+window.site = {
+	start_time: Date.now(),
+	session: {
+		loggedin: <%= session.loggedin %>,
+		userID: <%= session.userID %>,
+		username: "<%= session.username %>",
+	},
+};
+</script>
