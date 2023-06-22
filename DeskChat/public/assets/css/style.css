@@ -345,10 +345,8 @@ header #header-creator{
 }
 
 header #header-creator:hover{
-	color: var(--accent-color);
-	opacity: 0.7;
+	opacity: 1;
 	cursor: pointer;
-	text-decoration: none;
 }
 
 header #header-center a{
@@ -564,7 +562,7 @@ input.hasDatepicker:focus{
 button{
 	width: fit-content;
 	height: fit-content;
-	background-color: var(--accent-color);
+	background-color: var(--background-color); /*var(--accent-color)*/
 	color: var(--text-color);
 	padding: 11px;
 	border: none;
@@ -578,7 +576,7 @@ button{
 }
 
 button:hover{
-	background-color: var(--accent-hover-color);
+	background-color: var(--hover-color); /*var(--accent-hover-color)*/
 	font-size: 14px;
 	cursor: pointer;
 }
@@ -586,7 +584,7 @@ button:hover{
 input[type=submit], button[type=submit]{
 	width: 60%;
 	height: 50px;
-	background-color: var(--accent-color);
+	background-color: var(--background-color); /*var(--accent-color)*/
 	color: var(--text-color);
 	padding: 0px;
 	border: none;
@@ -600,13 +598,13 @@ input[type=submit], button[type=submit]{
 }
 
 input[type=submit]:hover, button[type=submit]:hover{
-	background-color: var(--accent-hover-color);
+	background-color: var(--hover-color); /*var(--accent-hover-color);*/
 	font-size: 16px;
 	cursor: pointer;
 }
 
 input.disabled[type=submit], button.disabled[type=submit]{
-	background-color: var(--accent-hover-color);
+	background-color: var(--hover-color); /*var(--accent-hover-color)*/
 }
 
 input.disabled[type=submit]:hover, button.disabled[type=submit]:hover{

@@ -6,7 +6,7 @@ $.post('/chats').then(data => {
 	}
 	data = Object.values(data);
 	$("#chats").html(`<div id="buttons-wrapper">
-		<a id="create-chat" class="link-important">+ Create Chat</a>
+		<button id="create-chat">+ Create Chat</button>
 	</div>`);
 	$("#create-chat").on("click", e => {
 		site.ui.modal.display(`<h2 style="text-align: center;">Create Chat</h2>

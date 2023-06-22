@@ -32,6 +32,7 @@ const session_instance = session({
 	saveUninitialized: true,
 	resave: false,
 	unset: "destroy",
+	name: "deskchat_session",
 	cookie: {
 		httpOnly: true,
 		maxAge: 30 * 24 * 60 * 60 * 1000,

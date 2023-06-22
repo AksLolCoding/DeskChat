@@ -18,7 +18,7 @@ $("body").append(`
 </div><br>
 <div id="login_container">
     <div id="google_login">
-		<img src="/images/icons/google.png">
+		<img src="/cdn/icons/google.png">
 		<span>Google</span>
 	</div>
 </div>`);
